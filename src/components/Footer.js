@@ -17,8 +17,8 @@ const FooterStyle = styled.div`
   .footer {
     margin-top: 50px;
     padding: 1em;
-    background-color: #ffb0b0;
-    color: white;
+    background-color: #efdecd;
+    color: black;
 
     left: 0;
     bottom: 0;
