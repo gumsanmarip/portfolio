@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Card from "../components/Card";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
@@ -27,7 +26,6 @@ function Projects(props) {
       <ProjectsStyle>
         <div className="title">Projects</div>
         <div className="container">
-          <a>Some words about what I learned, tech stack, skills learned</a>
           <ProjectsScrollStyle>
             <article class="scroller">
               <button className="left">
@@ -84,6 +82,11 @@ const ProjectsStyle = styled.div`
   .container {
     margin: 10px 0px 100px 0px;
   }
+  @media only screen and (max-width: 1080px) {
+    .container {
+      margin: 10px 0px 0px 0px;
+    }
+  }
 `;
 const ProjectsScrollStyle = styled.div`
   .scroller {
@@ -97,8 +100,8 @@ const ProjectsScrollStyle = styled.div`
     margin: 10px 0px 10px 0px;
   }
   .section {
-    height: 500px;
-    width: 800px;
+    height: 400px;
+    width: 600px;
     margin: 10px 25px 10px 25px;
     background: #dbd1b4;
     flex-shrink: 0;
@@ -165,11 +168,25 @@ const ProjectsScrollStyle = styled.div`
 
   @media only screen and (max-width: 1080px) {
     .scroller {
+      scroll-padding: 0;
+      margin: 1rem 0rem 1rem 0px;
     }
-    .scroller .section {
-      height: 500px;
-      width: 500px;
-      margin: 25px 25px 25px 25px;
+    .section {
+      height: 350px;
+      width: auto;
+      margin: 10px 10px 10px 10px;
+    }
+    .left {
+      display: none;
+    }
+    .left-icon {
+      display: none;
+    }
+    .right {
+      display: none;
+    }
+    .right-icon {
+      display: none;
     }
   }
 `;

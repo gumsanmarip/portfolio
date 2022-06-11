@@ -27,4 +27,8 @@ const FeedbackStyle = styled.div`
     font-weight: bold;
     font-size: 30px;
   }
+  @media only screen and (max-width: 1080px) {
+    .container {
+      margin: 10px 10px 10px 10px;
+    }
 `;

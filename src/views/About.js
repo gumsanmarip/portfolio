@@ -7,7 +7,7 @@ function About(props) {
       <AboutStyle>
         <div className="container">
           <div className="title">About</div>
-          <a>About: Technologies and Tools, Skills, Story, Dreams</a>
+          <h1>About: Technologies and Tools, Skills, Story, Dreams</h1>
         </div>
       </AboutStyle>
     </section>
@@ -23,4 +23,8 @@ const AboutStyle = styled.div`
     font-size: 30px;
     font-weight: bold;
   }
+  @media only screen and (max-width: 1080px) {
+    .container {
+      margin: 10px 10px 10px 10px;
+    }
 `;

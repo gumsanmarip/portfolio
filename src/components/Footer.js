@@ -15,7 +15,7 @@ export default Footer;
 
 const FooterStyle = styled.div`
   .footer {
-    margin-top: 50px;
+    margin-top: 1em;
     padding: 1em;
     background-color: #efdecd;
     color: black;
@@ -30,5 +30,10 @@ const FooterStyle = styled.div`
   }
   p {
     font-size: 0.75em;
+  }
+  @media only screen and (max-width: 1080px) {
+    .footer {
+      width: inherit;
+    }
   }
 `;

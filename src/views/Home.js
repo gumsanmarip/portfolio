@@ -9,7 +9,7 @@ function Home(props) {
   return (
     <section id="home">
       <HomeStyle>
-        <div className="container">
+        <div className="body">
           <div className="intro">
             <a>picture, introduction</a>
           </div>
@@ -34,13 +34,15 @@ function Home(props) {
 export default Home;
 
 const HomeStyle = styled.div`
-  .container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 50px;
-    margin-left: 50px;
+  .body {
+    margin: 100px 50px 100px 50px;
   }
   .intro {
     display: flex;
+  }
+  @media only screen and (max-width: 1080px) {
+    .body {
+      margin: 100px 0px 50px 0px;
+    }
   }
 `;
