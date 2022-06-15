@@ -24,26 +24,28 @@ export default function Navbar() {
         </div>
         <MenuStyle>
           <div className="menu">
-            <li>
-              <Link to="#about" role="button">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="#projects" role="button">
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="#contact" role="button">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link to="#feedback" role="button">
-                Feedback
-              </Link>
-            </li>
+            <div className="nav">
+              <li>
+                <Link to="#about" role="button">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="#projects" role="button">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="#contact" role="button">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="#feedback" role="button">
+                  Feedback
+                </Link>
+              </li>
+            </div>
             <div className="theme-mode">
               <ToggleButtonGroup
                 color="primary"
@@ -88,8 +90,11 @@ const NavbarStyle = styled.div`
   }
   @media only screen and (max-width: 1080px) {
     width: inherit;
+    .logo {
+      margin-left: 10px;
+    }
     .logo a {
-      font-size: 0.5em;
+      font-size: 1em;
     }
   }
 `;
@@ -101,7 +106,7 @@ const MenuStyle = styled.ul`
     align-items: center;
     margin-left: auto;
   }
-  .night-mode {
+  .theme-mode {
     margin-right: 50px;
   }
   li {
@@ -115,5 +120,8 @@ const MenuStyle = styled.ul`
   }
 
   @media only screen and (max-width: 1080px) {
+    .nav {
+      display: none;
+    }
   }
 `;

@@ -5,7 +5,6 @@ function Footer(props) {
   return (
     <FooterStyle>
       <div className="footer">
-        <p>Social</p>
         <p>Copyright 2022 Marip Inc All Rights Reserved</p>
       </div>
     </FooterStyle>

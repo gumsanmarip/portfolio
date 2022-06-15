@@ -24,8 +24,8 @@ const FeedbackStyle = styled.div`
   }
   .title {
     text-align: center;
+    font-size: 40px;
     font-weight: bold;
-    font-size: 30px;
   }
   @media only screen and (max-width: 1080px) {
     .container {

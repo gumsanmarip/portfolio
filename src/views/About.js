@@ -20,7 +20,7 @@ const AboutStyle = styled.div`
   }
   .title {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
   }
   @media only screen and (max-width: 1080px) {

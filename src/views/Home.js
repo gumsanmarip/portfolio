@@ -35,7 +35,7 @@ export default Home;
 
 const HomeStyle = styled.div`
   .body {
-    margin: 100px 50px 100px 50px;
+    margin: 100px 0px 100px 0px;
   }
   .intro {
     display: flex;
